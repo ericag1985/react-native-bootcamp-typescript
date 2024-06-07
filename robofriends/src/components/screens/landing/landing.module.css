@@ -1,0 +1,18 @@
+.container {
+  --header-space: 20px;
+
+  background: var(--background-gradient);
+  position: sticky;
+  top: 0;
+  padding: var(--header-space);
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--header-space);
+}
+
+.heading {
+  margin: 0;
+}

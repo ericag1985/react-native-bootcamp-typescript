@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Card from "../card/card";
-import { Cat } from "../../data/cat-data";
+import { Cat } from "../../../data/cat-data";
 
 interface CardListProps {
   items: Cat[];
@@ -8,7 +8,7 @@ interface CardListProps {
 
 const CardList: FC<CardListProps> = ({ items }) => {
   return (
-    <ul className="list flex flex-wrap">
+    <ul className="list flex flex-wrap justify-center">
       {items.map((item) => {
         return (
           <li key={item.id}>
