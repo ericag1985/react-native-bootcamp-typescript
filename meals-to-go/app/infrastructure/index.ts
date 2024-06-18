@@ -8,18 +8,11 @@ import {
   fontSizes,
   FontSizes,
 } from "./fonts";
-import { DefaultTheme } from "react-native-paper";
+import { DefaultTheme } from "styled-components/native";
 
-const theme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-    ...colors,
-  },
-  fonts: {
-    ...DefaultTheme.fonts,
-    ...fonts,
-  },
+const theme: DefaultTheme = {
+  colors,
+  fonts,
   spacing,
   lineHeights,
   sizes,
